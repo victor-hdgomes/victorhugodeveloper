@@ -256,12 +256,25 @@ button {
         display: none;
     }
 
-    .vh-social-links {
+    .vh-social-links, .vh-social-links-about {
         width: 100%;
         height: 45px;
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+
+    .vh-social-links-about{
+        max-width: 50%;
+    }
+
+    .vh-social-links-about a{
+        font-size: 25px;
+        transition: all .3s;
+    }
+
+    .vh-social-links-about a:hover{
+        color: var(--gray);
     }
 
     .vh-corner {
@@ -626,6 +639,11 @@ button {
     font-weight: 400;
 }
 
+.vh-open-sans{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+}
+
 .vh-text-green {
     color: var(--green);
 }
@@ -695,6 +713,33 @@ button {
 
 .vh-radius-left {
     border-radius: 23px;
+}
+
+.vh-page-list{
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.vh-page-list > li{
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 15px;
+    position: relative;
+    margin-left: 20px;
+}
+
+.vh-page-list > li:before{
+    content: '';
+    width: 8px;
+    height: 8px;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: 7px;
+    left: -20px;
+    background-color: var(--green);
 }
 
 /* BEHAVIOR CLASSES */
