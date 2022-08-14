@@ -34,16 +34,35 @@ window.addEventListener('load', function () {
     }, 2000)
 })
 
+// MENU MOBILE
+{
+    let toggleMenu = document.querySelectorAll('.vh-toggle-menu');
+    let menuMobile = document.querySelector('.vh-menu-mobile');
+    let overlay = document.querySelector('.vh-menu-overlay');
+    let btnMenuIcon = document.querySelector('.vh-btn-menu-mobile i');
+    for (let i = 0; i < toggleMenu.length; i++) {
+        toggleMenu[i].addEventListener('click', function () {
+            menuMobile.classList.toggle('vh-menu-is-closed');
+            menuMobile.classList.toggle('vh-menu-is-opened');
+            btnMenuIcon.classList.toggle('bi-list');
+            btnMenuIcon.classList.toggle('bi-x');
+            overlay.classList.toggle("vh-is-open");
+        })
+    }
+}
+
 // CONTACT MODAL
-let toggleModal = document.querySelectorAll('.vh-toggle-modal');
-for (let index = 0; index < toggleModal.length; index++) {
-    toggleModal[index].addEventListener('click', function () {
-        let overlay = document.querySelector('.vh-overlay')
-        let contactModal = document.querySelector('#vh-contact-modal')
-        overlay.classList.toggle("vh-is-open");
-        contactModal.classList.toggle("vh-is-open");
-        contactModal.classList.toggle("vh-slide-top-in");
-    })
+{
+    let toggleModal = document.querySelectorAll('.vh-toggle-modal');
+    for (let i = 0; i < toggleModal.length; i++) {
+        toggleModal[i].addEventListener('click', function () {
+            let overlay = document.querySelector('.vh-overlay')
+            let contactModal = document.querySelector('#vh-contact-modal')
+            overlay.classList.toggle("vh-is-open");
+            contactModal.classList.toggle("vh-is-open");
+            contactModal.classList.toggle("vh-slide-top-in");
+        })
+    }
 }
 
 // ACTIVE LINK
