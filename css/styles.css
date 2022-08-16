@@ -474,14 +474,20 @@ button {
         width: 100%;
         display: table;
         margin-top: 64px;
-        margin-left: 15px;
         position: relative;
         opacity: 0;
-        left: -75px;
     }
 
     .vh-projects-list .vh-projects-item-info {
         width: calc(100% - 105px);
+    }
+
+    .vh-slider-list .vh-projects-item-info p {
+        text-align: center;
+    }
+
+    .vh-slider-list .vh-projects-item-info button {
+        margin: 0 auto;
     }
 
     .vh-slider-list .vh-projects-item-thumb,
@@ -492,7 +498,11 @@ button {
         position: relative;
     }
 
-    .vh-slider-list .vh-projects-item-thumb>button,
+    .vh-slider-list .vh-projects-item-thumb>button {
+        margin: 17px auto 0 auto;
+        float: none;
+    }
+
     .vh-projects-list .vh-projects-item-thumb>button {
         margin-top: 17px;
         margin-right: 75px;
@@ -523,11 +533,11 @@ button {
     }
 
     .vh-slider-list .vh-projects-item-thumb img {
-        width: 100%;
-        max-width: 100%;
+        width: 90%;
+        max-width: 90%;
         height: auto;
         position: relative;
-        left: -75px;
+        left: 5%;
         transform: scale(0);
     }
 
@@ -627,7 +637,8 @@ button {
     }
 
     .vh-title-large {
-        font-size: 48px;
+        font-size: 36px;
+        text-align: center;
     }
 
 }
@@ -641,6 +652,11 @@ button {
 @media screen and (min-width: 768px) {
     #coding {
         margin-top: 18%;
+    }
+
+    /* UTILITY CLASSES */
+    .vh-title-large {
+        font-size: 48px;
     }
 }
 
@@ -714,25 +730,40 @@ button {
 
     .vh-slider-list .vh-projects-item-thumb img {
         width: 110%;
-        max-width: 110%;    
+        max-width: 110%;
         left: -65px;
     }
 
     .vh-slider-list .vh-projects-item-thumb>button {
-        margin-right: 25px;
+        margin: 25px 5% 0 0;
+        float: right;
     }
 
-    .vh-navigator-counter span{
+    .vh-slider-list .vh-projects-item-info {
+        margin-left: 15px;
+        left: -75px;
+    }
+
+    .vh-slider-list .vh-projects-item-info button {
+        margin: 0;
+    }
+
+    .vh-navigator-counter span {
         font-size: 100px;
     }
 
-    .vh-navigator-counter:before{
+    .vh-navigator-counter:before {
         width: 30px;
     }
 
     /* UTILITY CLASSES */
     .vh-title-xlarge {
         font-size: 120px;
+    }
+
+    .vh-title-large,
+    .vh-slider-list .vh-projects-item-info p {
+        text-align: left;
     }
 }
 
@@ -747,7 +778,7 @@ button {
 
     .vh-slider-list .vh-projects-item-thumb img {
         width: 100%;
-        max-width: 100%;    
+        max-width: 100%;
         left: -75px;
     }
 
@@ -755,15 +786,15 @@ button {
         margin-right: 75px;
     }
 
-    .vh-navigator-counter span{
+    .vh-navigator-counter span {
         font-size: 120px;
     }
 
-    .vh-navigator-counter:before{
+    .vh-navigator-counter:before {
         width: 35px;
     }
 
-    .vh-slider-list .vh-projects-item{
+    .vh-slider-list .vh-projects-item {
         margin-top: calc(26vh - 75px);
     }
 
