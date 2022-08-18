@@ -152,14 +152,14 @@ button {
         height: 100vh;
         display: none;
         position: fixed;
-        z-index: 3;
+        z-index: 4;
         top: 0;
         left: 0;
         background-color: rgba(44, 203, 105, .95);
     }
 
     .vh-modal {
-        width: 800px;
+        width: 90%;
         position: fixed;
         display: none;
         padding: 30px;
@@ -354,6 +354,7 @@ button {
     .vh-home-presentation button {
         margin-left: auto;
         margin-right: auto;
+        z-index: 2;
     }
 
     .vh-home-presentation h1 {
@@ -362,12 +363,13 @@ button {
 
     /* HOME - PROJECTS */
     .vh-projects-navigator {
-        width: 145px;
+        width: 68%;
         display: table;
-        height: 400px;
+        height: auto;
         position: absolute;
         left: 0;
-        top: 26vh;
+        bottom: 15px;
+        z-index: 2;
     }
 
     .vh-navigator-counter {
@@ -445,6 +447,7 @@ button {
     .vh-slider-container {
         display: block;
         overflow: hidden;
+        padding-bottom: 120px;
     }
 
     .vh-slider-list {
@@ -462,8 +465,8 @@ button {
     .vh-slider-list .vh-projects-item {
         display: block;
         float: left;
-        height: 500px;
-        margin-top: calc(36vh - 75px);
+        height: auto;
+        margin-top: 0;
     }
 
     .vh-projects-list .vh-projects-item {
@@ -473,7 +476,7 @@ button {
     .vh-slider-list .vh-projects-item-info {
         width: 100%;
         display: table;
-        margin-top: 64px;
+        margin-top: 15px;
         position: relative;
         opacity: 0;
     }
@@ -490,7 +493,13 @@ button {
         margin: 0 auto;
     }
 
-    .vh-slider-list .vh-projects-item-thumb,
+    .vh-slider-list .vh-projects-item-thumb {
+        width: 100%;
+        display: table;
+        padding: 30px 0 19px 0;
+        position: relative;
+    }
+
     .vh-projects-list .vh-projects-item-thumb {
         width: 100%;
         display: table;
@@ -641,6 +650,11 @@ button {
         text-align: center;
     }
 
+    .vh-full-height {
+        height: auto;
+        position: relative;
+    }
+
 }
 
 @media screen and (min-width: 576px) {
@@ -724,6 +738,24 @@ button {
         margin-top: 0;
     }
 
+    .vh-projects-navigator {
+        width: 145px;
+        height: 400px;
+        left: 0;
+        top: 26vh;
+    }
+
+    .vh-slider-container{
+        padding-bottom: 0;
+    }
+
+    .vh-slider-list .vh-projects-item {
+        display: block;
+        float: left;
+        height: 500px;
+        margin-top: calc(36vh - 75px);
+    }
+
     .vh-slider-list .vh-projects-item-thumb {
         padding: 30px 0 19px 0;
     }
@@ -742,6 +774,14 @@ button {
     .vh-slider-list .vh-projects-item-info {
         margin-left: 15px;
         left: -75px;
+    }
+
+    .vh-slider-list .vh-projects-item-info {
+        width: 100%;
+        display: table;
+        margin-top: 64px;
+        position: relative;
+        opacity: 0;
     }
 
     .vh-slider-list .vh-projects-item-info button {
@@ -764,6 +804,10 @@ button {
     .vh-title-large,
     .vh-slider-list .vh-projects-item-info p {
         text-align: left;
+    }
+
+    .vh-full-height {
+        height: calc(100vh - 30px);
     }
 }
 
@@ -796,6 +840,10 @@ button {
 
     .vh-slider-list .vh-projects-item {
         margin-top: calc(26vh - 75px);
+    }
+
+    .vh-modal {
+        width: 800px;
     }
 
     /* UTILITY CLASSES */
@@ -851,9 +899,12 @@ button {
     background-color: var(--black);
 }
 
-.vh-full-height {
-    height: calc(100vh - 30px);
-    position: relative;
+.vh-mar-top-30 {
+    margin-top: 30px;
+}
+
+.vh-mar-top-60 {
+    margin-top: 60px;
 }
 
 .vh-mar-bottom-15 {
