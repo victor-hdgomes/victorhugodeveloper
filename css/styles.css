@@ -287,7 +287,7 @@ button {
         bottom: 45px;
         right: 45px;
         border-radius: 50%;
-        z-index: 2;
+        z-index: 3;
         transition: all .3s ease-out;
         cursor: pointer;
         border: none;
@@ -460,6 +460,7 @@ button {
 
     .vh-projects-list {
         list-style: none;
+        padding-left: 0;
     }
 
     .vh-slider-list .vh-projects-item {
@@ -470,7 +471,7 @@ button {
     }
 
     .vh-projects-list .vh-projects-item {
-        margin-bottom: 100px;
+        margin-bottom: 30px;
     }
 
     .vh-slider-list .vh-projects-item-info {
@@ -513,9 +514,7 @@ button {
     }
 
     .vh-projects-list .vh-projects-item-thumb>button {
-        margin-top: 17px;
-        margin-right: 75px;
-        float: right;
+        margin: 17px auto 0;
     }
 
     .vh-slider-list .vh-projects-item-box,
@@ -555,7 +554,6 @@ button {
         max-width: 100%;
         height: auto;
         position: relative;
-        left: -75px;
     }
 
     /* PROJECTS */
@@ -563,13 +561,16 @@ button {
         margin-top: 130px;
     }
 
-    .vh-projects-list .vh-projects-item:nth-child(odd) .vh-projects-item-info {
-        text-align: right;
-        margin-top: 70px;
+    .vh-projects-list .vh-projects-item:nth-child(odd) .vh-projects-item-info,
+    .vh-projects-list .vh-projects-item:nth-child(even) .vh-projects-item-info {
+        width: 100%;
+        text-align: center;
     }
 
-    .vh-projects-list .vh-projects-item:nth-child(odd) .vh-projects-item-info button {
-        float: right;
+    .vh-projects-list .vh-projects-item:nth-child(odd) .vh-projects-item-info button,
+    .vh-projects-list .vh-projects-item:nth-child(even) .vh-projects-item-info button {
+        float: none;
+        margin: 0 auto;
     }
 
     .vh-projects-list .vh-projects-item:nth-child(even)>.row {
@@ -577,17 +578,12 @@ button {
     }
 
     .vh-projects-list .vh-projects-item:nth-child(even) .vh-projects-item-info {
-        margin-left: 105px;
-        margin-top: 70px;
-    }
-
-    .vh-projects-list .vh-projects-item:nth-child(even) .vh-projects-item-thumb button {
-        float: left;
-        margin-left: 75px;
+        width: 100%;
+        margin-left: 0;
     }
 
     .vh-projects-list .vh-projects-item:nth-child(even) .vh-projects-item-thumb img {
-        left: 75px;
+        display: block;
     }
 
     /* SCROLL DOWN */
@@ -745,7 +741,7 @@ button {
         top: 26vh;
     }
 
-    .vh-slider-container{
+    .vh-slider-container {
         padding-bottom: 0;
     }
 
@@ -786,6 +782,68 @@ button {
 
     .vh-slider-list .vh-projects-item-info button {
         margin: 0;
+    }
+
+    .vh-projects-list .vh-projects-item {
+        margin-bottom: 100px;
+    }
+
+
+
+    .vh-projects-list .vh-projects-item:nth-child(odd) .vh-projects-item-info {
+        text-align: right;
+        margin-top: 70px;
+    }
+
+    .vh-projects-list .vh-projects-item:nth-child(odd) .vh-projects-item-info button {
+        float: right;
+    }
+
+    .vh-projects-list .vh-projects-item:nth-child(odd) .vh-projects-item-info h1,
+    .vh-projects-list .vh-projects-item:nth-child(odd) .vh-projects-item-info p {
+        text-align: right;
+    }
+
+    .vh-projects-list .vh-projects-item-thumb{
+        padding: 30px 0 19px 0;
+    }
+
+    .vh-projects-list .vh-projects-item:nth-child(even) .vh-projects-item-info {
+        margin-left: 105px;
+        margin-top: 70px;
+    }
+
+    .vh-projects-list .vh-projects-item:nth-child(even) .vh-projects-item-info {
+        margin-top: 70px;
+    }
+
+    .vh-projects-list .vh-projects-item:nth-child(even) .vh-projects-item-info h1,
+    .vh-projects-list .vh-projects-item:nth-child(even) .vh-projects-item-info p {
+        text-align: left;
+    }
+
+    .vh-projects-list .vh-projects-item:nth-child(even) .vh-projects-item-info button {
+        float: left;
+    }
+
+    .vh-projects-list .vh-projects-item:nth-child(even) .vh-projects-item-thumb img{
+        left: 75px;
+    }
+
+    .vh-projects-list .vh-projects-item:nth-child(odd) .vh-projects-item-thumb img{
+        right: 75px;
+    }
+
+    .vh-projects-list .vh-projects-item:nth-child(odd) .vh-projects-item-thumb>button {
+        margin-top: 17px;
+        margin-right: 75px;
+        float: right;
+    }
+
+    .vh-projects-list .vh-projects-item:nth-child(even) .vh-projects-item-thumb>button {
+        margin-top: 17px;
+        margin-left: 75px;
+        float: left;
     }
 
     .vh-navigator-counter span {
@@ -844,6 +902,10 @@ button {
 
     .vh-modal {
         width: 800px;
+    }
+
+    .vh-projects-list .vh-projects-item-thumb{
+        padding: 75px 0 19px 0;
     }
 
     /* UTILITY CLASSES */
