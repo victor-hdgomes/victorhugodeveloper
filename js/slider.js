@@ -98,7 +98,11 @@ let setActiveSlide = function () {
 }
 
 // Container width
-let containerWidth = sliderContainer.parentElement.offsetWidth;
+if (window.innerWidth<992) {
+    var containerWidth = sliderContainer.parentElement.offsetWidth - 30;
+} else{
+    var containerWidth = sliderContainer.parentElement.offsetWidth;
+}
 
 sliderContainer.style.width = containerWidth + 'px';
 
