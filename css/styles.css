@@ -544,7 +544,7 @@ button {
         text-align: center;
     }
 
-    .vh-slider-list .vh-projects-item-info button {
+    .vh-slider-list .vh-projects-item-info a {
         margin: 0 auto;
     }
 
@@ -834,7 +834,7 @@ button {
         opacity: 0;
     }
 
-    .vh-slider-list .vh-projects-item-info button {
+    .vh-slider-list .vh-projects-item-info a {
         margin: 0;
     }
 
