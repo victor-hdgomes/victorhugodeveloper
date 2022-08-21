@@ -300,7 +300,7 @@ button {
         position: fixed;
         bottom: 115px;
         right: 65px;
-        z-index: 2;
+        z-index: 3;
         display: none;
     }
 
