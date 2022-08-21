@@ -22,6 +22,13 @@
         rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/styles.css">
+    <!-- WAYPOINTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"
+        integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/inview.min.js"
+        integrity="sha512-g6IhMPPqSSUgE+lYgBpdsXICK0fNhDlDDEuIbphNIKfPTYFD/1VcnxA+7pS9mibvzIb5SB0nNvii5M+yMwkcJA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
     <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- JS -->
@@ -31,6 +38,8 @@
 </head>
 
 <body>
+    <!-- BACKGROUND SCROOL -->
+    <div class="vh-trigger-topbar"></div>
     <!-- PRELOADER -->
     <div class="vh-preloader">
         <div class="vh-preloader-inner">
@@ -42,7 +51,7 @@
     <div class="vh-menu-overlay vh-toggle-menu"></div>
     <!-- MENU -->
     <header class="vh-topbar">
-        <div class="vh-logo">
+        <div class="vh-logo vh-logo-big">
             <img src="../images/logo.svg" alt="Victor Hugo's logo">
         </div>
         <nav class="vh-menu">
@@ -91,15 +100,15 @@
                                     <div class="vh-projects-item-info vh-text-light" data-aos="zoom-in-up">
                                         <h1 class="vh-abril-fatface vh-title-large vh-mar-bottom-15">Prime Flix</h1>
                                         <p class="vh-mar-bottom-30">Project with ReactJs.</p>
-                                        <button class="vh-btn vh-btn-lg vh-btn-green">Visit WebSite</button>
+                                        <a href="" target="_blank" class="vh-btn vh-btn-lg vh-btn-green">Visit WebSite</a>
                                     </div>
                                 </div>
                                 <div class="col-sm-12 col-lg-6 order-1 order-lg-2 offset-lg-1">
                                     <div class="vh-projects-item-thumb">
                                         <div class="vh-projects-item-box d-none d-lg-block" data-aos="zoom-in"></div>
                                         <img src="../images/primeFlix.png" title="Prime Flix" alt="Prime Flix" data-aos="flip-left" data-aos-offset="200" data-aos-delay="300">
-                                        <button class="vh-btn vh-btn-md vh-btn-dark">GitHub Repository <i
-                                                class="bi bi-arrow-up-right"></i></button>
+                                        <a href="" target="_blank" class="vh-btn vh-btn-md vh-btn-dark">GitHub Repository <i
+                                                class="bi bi-arrow-up-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -110,15 +119,15 @@
                                     <div class="vh-projects-item-info vh-text-light" data-aos="zoom-in-up">
                                         <h1 class="vh-abril-fatface vh-title-large vh-mar-bottom-15">Secret Word</h1>
                                         <p class="vh-mar-bottom-30">Project with ReactJs.</p>
-                                        <button class="vh-btn vh-btn-lg vh-btn-green">Visit WebSite</button>
+                                        <a href="" target="_blank" class="vh-btn vh-btn-lg vh-btn-green">Visit WebSite</a>
                                     </div>
                                 </div>
                                 <div class="col-sm-12 col-lg-6 order-1 order-lg-2">
                                     <div class="vh-projects-item-thumb">
                                         <div class="vh-projects-item-box d-none d-lg-block" data-aos="zoom-in"></div>
                                         <img src="../images/secretWord.png" title="Secret Word" alt="Secret Word" data-aos="flip-left" data-aos-offset="200" data-aos-delay="300">
-                                        <button class="vh-btn vh-btn-md vh-btn-dark">GitHub Repository <i
-                                                class="bi bi-arrow-up-right"></i></button>
+                                        <a href="" target="_blank" class="vh-btn vh-btn-md vh-btn-dark">GitHub Repository <i
+                                                class="bi bi-arrow-up-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -129,15 +138,15 @@
                                     <div class="vh-projects-item-info vh-text-light" data-aos="zoom-in-up">
                                         <h1 class="vh-abril-fatface vh-title-large vh-mar-bottom-15">Mini Blog</h1>
                                         <p class="vh-mar-bottom-30">Project with ReactJs and firebase.</p>
-                                        <button class="vh-btn vh-btn-lg vh-btn-green">Visit WebSite</button>
+                                        <a href="" target="_blank" class="vh-btn vh-btn-lg vh-btn-green">Visit WebSite</a>
                                     </div>
                                 </div>
                                 <div class="col-sm-12 col-lg-6 order-1 order-lg-2 offset-lg-1">
                                     <div class="vh-projects-item-thumb">
                                         <div class="vh-projects-item-box d-none d-lg-block" data-aos="zoom-in"></div>
                                         <img src="../images/miniBlog.png" title="Mini Blog" alt="Mini Blog" data-aos="flip-left" data-aos-offset="200" data-aos-delay="300">
-                                        <button class="vh-btn vh-btn-md vh-btn-dark">GitHub Repository <i
-                                                class="bi bi-arrow-up-right"></i></button>
+                                        <a href="" target="_blank" class="vh-btn vh-btn-md vh-btn-dark">GitHub Repository <i
+                                                class="bi bi-arrow-up-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -148,15 +157,15 @@
                                     <div class="vh-projects-item-info vh-text-light" data-aos="zoom-in-up">
                                         <h1 class="vh-abril-fatface vh-title-large vh-mar-bottom-15">Finans</h1>
                                         <p class="vh-mar-bottom-30">Project with HTML, CSS and Bootstrap.</p>
-                                        <button class="vh-btn vh-btn-lg vh-btn-green">Visit WebSite</button>
+                                        <a href="https://victor-hdgomes.github.io/finans/" target="_blank" class="vh-btn vh-btn-lg vh-btn-green">Visit WebSite</a>
                                     </div>
                                 </div>
                                 <div class="col-sm-12 col-lg-6 order-1 order-lg-2">
                                     <div class="vh-projects-item-thumb">
                                         <div class="vh-projects-item-box d-none d-lg-block" data-aos="zoom-in"></div>
                                         <img src="../images/finans.png" title="Finans" alt="Finans" data-aos="flip-left" data-aos-offset="200" data-aos-delay="300">
-                                        <button class="vh-btn vh-btn-md vh-btn-dark">GitHub Repository <i
-                                                class="bi bi-arrow-up-right"></i></button>
+                                        <a href="https://github.com/victor-hdgomes/finans" target="_blank" class="vh-btn vh-btn-md vh-btn-dark">GitHub Repository <i
+                                                class="bi bi-arrow-up-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -167,53 +176,53 @@
                                     <div class="vh-projects-item-info vh-text-light" data-aos="zoom-in-up">
                                         <h1 class="vh-abril-fatface vh-title-large vh-mar-bottom-15">Spotify</h1>
                                         <p class="vh-mar-bottom-30">Project with HTML, CSS and Bootstrap.</p>
-                                        <button class="vh-btn vh-btn-lg vh-btn-green">Visit WebSite</button>
+                                        <a href="https://victor-hdgomes.github.io/spotify/" target="_blank" class="vh-btn vh-btn-lg vh-btn-green">Visit WebSite</a>
                                     </div>
                                 </div>
                                 <div class="col-sm-12 col-lg-6 order-1 order-lg-2 offset-lg-1">
                                     <div class="vh-projects-item-thumb">
                                         <div class="vh-projects-item-box d-none d-lg-block" data-aos="zoom-in"></div>
                                         <img src="../images/spotify.png" title="Spotify" alt="Spotify" data-aos="flip-left" data-aos-offset="200" data-aos-delay="300">
-                                        <button class="vh-btn vh-btn-md vh-btn-dark">GitHub Repository <i
-                                                class="bi bi-arrow-up-right"></i></button>
+                                        <a href="https://github.com/victor-hdgomes/spotify" target="_blank" class="vh-btn vh-btn-md vh-btn-dark">GitHub Repository <i
+                                                class="bi bi-arrow-up-right"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </li>
-                        <li class="vh-projects-item" data-slide="5">
+                        <li class="vh-projects-item" data-slide="6">
                             <div class="row">
                                 <div class="col-sm-12 col-lg-6 order-2 order-lg-1">
                                     <div class="vh-projects-item-info vh-text-light" data-aos="zoom-in-up">
                                         <h1 class="vh-abril-fatface vh-title-large vh-mar-bottom-15">Orlando City</h1>
                                         <p class="vh-mar-bottom-30">Project with HTML, CSS and Bootstrap.</p>
-                                        <button class="vh-btn vh-btn-lg vh-btn-green">Visit WebSite</button>
+                                        <a href="https://victor-hdgomes.github.io/OrlandoCity/" target="_blank" class="vh-btn vh-btn-lg vh-btn-green">Visit WebSite</a>
                                     </div>
                                 </div>
                                 <div class="col-sm-12 col-lg-6 order-1 order-lg-2">
                                     <div class="vh-projects-item-thumb">
                                         <div class="vh-projects-item-box d-none d-lg-block" data-aos="zoom-in"></div>
                                         <img src="../images/orlandoCity.png" title="Orlando City" alt="Orlando City" data-aos="flip-left" data-aos-offset="200" data-aos-delay="300">
-                                        <button class="vh-btn vh-btn-md vh-btn-dark">GitHub Repository <i
-                                                class="bi bi-arrow-up-right"></i></button>
+                                        <a href="https://github.com/victor-hdgomes/OrlandoCity" target="_blank" class="vh-btn vh-btn-md vh-btn-dark">GitHub Repository <i
+                                                class="bi bi-arrow-up-right"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </li>
-                        <li class="vh-projects-item" data-slide="5">
+                        <li class="vh-projects-item" data-slide="7">
                             <div class="row">
                                 <div class="col-sm-12 col-lg-5 order-2 order-lg-1">
                                     <div class="vh-projects-item-info vh-text-light" data-aos="zoom-in-up">
                                         <h1 class="vh-abril-fatface vh-title-large vh-mar-bottom-15">Exact Time</h1>
                                         <p class="vh-mar-bottom-30">Project with HTML, CSS and Bootstrap.</p>
-                                        <button class="vh-btn vh-btn-lg vh-btn-green">Visit WebSite</button>
+                                        <a href="https://victor-hdgomes.github.io/exactTime/" target="_blank" class="vh-btn vh-btn-lg vh-btn-green">Visit WebSite</a>
                                     </div>
                                 </div>
                                 <div class="col-sm-12 col-lg-6 order-1 order-lg-2 offset-lg-1">
                                     <div class="vh-projects-item-thumb">
                                         <div class="vh-projects-item-box d-none d-lg-block" data-aos="zoom-in"></div>
                                         <img src="../images/exactTime.png" title="Exact Time" alt="Exact Time" data-aos="flip-left" data-aos-offset="200" data-aos-delay="300">
-                                        <button class="vh-btn vh-btn-md vh-btn-dark">GitHub Repository <i
-                                                class="bi bi-arrow-up-right"></i></button>
+                                        <a href="https://github.com/victor-hdgomes/exactTime" target="_blank" class="vh-btn vh-btn-md vh-btn-dark">GitHub Repository <i
+                                                class="bi bi-arrow-up-right"></i></a>
                                     </div>
                                 </div>
                             </div>

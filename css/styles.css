@@ -118,6 +118,47 @@ button {
     }
 }
 
+@keyframes topbarBg {
+    from{
+        background: transparent;
+    }
+    to {
+        background: -moz-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+        background: -webkit-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#00000000', GradientType=0);
+    }
+}
+
+@keyframes logoShorten {
+    from{
+        top: 0;
+    }
+    to {
+        top: -28px;
+    }
+}
+
+@keyframes logoBig {
+    from{
+        top: -28px;
+    }
+    to {
+        top: 0;
+    }
+}
+
+/* TRIGGER TOPBAR */
+.vh-trigger-topbar {
+    width: 1px;
+    height: 1px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 130px;
+    background: transparent;
+}
+
 /* RESPONSIVE */
 @media screen and (min-width: 320px) {
 
@@ -203,11 +244,15 @@ button {
         width: 100%;
         height: 110px;
         display: flex;
-        background-color: transparent;
+        background: transparent;
         position: fixed;
         top: 0;
         left: 0;
         z-index: 5;
+    }
+
+    .vh-topbar-bg {
+        animation: topbarBg .2s ease-out forwards;
     }
 
     .vh-logo {
@@ -216,6 +261,15 @@ button {
         margin-left: 60px;
         background-color: var(--green);
         border-bottom-right-radius: 37px;
+        position: relative;
+    }
+
+    .vh-logo-big {
+        animation: logoBig .2s ease-out forwards;
+    }
+
+    .vh-logo-shorten {
+        animation: logoShorten .2s ease-out forwards;
     }
 
     .vh-logo img {
@@ -508,12 +562,12 @@ button {
         position: relative;
     }
 
-    .vh-slider-list .vh-projects-item-thumb>button {
+    .vh-slider-list .vh-projects-item-thumb>a {
         margin: 17px auto 0 auto;
         float: none;
     }
 
-    .vh-projects-list .vh-projects-item-thumb>button {
+    .vh-projects-list .vh-projects-item-thumb>a {
         margin: 17px auto 0;
     }
 
@@ -567,8 +621,8 @@ button {
         text-align: center;
     }
 
-    .vh-projects-list .vh-projects-item:nth-child(odd) .vh-projects-item-info button,
-    .vh-projects-list .vh-projects-item:nth-child(even) .vh-projects-item-info button {
+    .vh-projects-list .vh-projects-item:nth-child(odd) .vh-projects-item-info a,
+    .vh-projects-list .vh-projects-item:nth-child(even) .vh-projects-item-info a {
         float: none;
         margin: 0 auto;
     }
@@ -762,7 +816,7 @@ button {
         left: -65px;
     }
 
-    .vh-slider-list .vh-projects-item-thumb>button {
+    .vh-slider-list .vh-projects-item-thumb>a {
         margin: 25px 5% 0 0;
         float: right;
     }
@@ -795,7 +849,7 @@ button {
         margin-top: 70px;
     }
 
-    .vh-projects-list .vh-projects-item:nth-child(odd) .vh-projects-item-info button {
+    .vh-projects-list .vh-projects-item:nth-child(odd) .vh-projects-item-info a {
         float: right;
     }
 
@@ -804,7 +858,7 @@ button {
         text-align: right;
     }
 
-    .vh-projects-list .vh-projects-item-thumb{
+    .vh-projects-list .vh-projects-item-thumb {
         padding: 30px 0 19px 0;
     }
 
@@ -822,25 +876,25 @@ button {
         text-align: left;
     }
 
-    .vh-projects-list .vh-projects-item:nth-child(even) .vh-projects-item-info button {
+    .vh-projects-list .vh-projects-item:nth-child(even) .vh-projects-item-info a {
         float: left;
     }
 
-    .vh-projects-list .vh-projects-item:nth-child(even) .vh-projects-item-thumb img{
+    .vh-projects-list .vh-projects-item:nth-child(even) .vh-projects-item-thumb img {
         left: 75px;
     }
 
-    .vh-projects-list .vh-projects-item:nth-child(odd) .vh-projects-item-thumb img{
+    .vh-projects-list .vh-projects-item:nth-child(odd) .vh-projects-item-thumb img {
         right: 75px;
     }
 
-    .vh-projects-list .vh-projects-item:nth-child(odd) .vh-projects-item-thumb>button {
+    .vh-projects-list .vh-projects-item:nth-child(odd) .vh-projects-item-thumb>a {
         margin-top: 17px;
         margin-right: 75px;
         float: right;
     }
 
-    .vh-projects-list .vh-projects-item:nth-child(even) .vh-projects-item-thumb>button {
+    .vh-projects-list .vh-projects-item:nth-child(even) .vh-projects-item-thumb>a {
         margin-top: 17px;
         margin-left: 75px;
         float: left;
@@ -884,7 +938,7 @@ button {
         left: -75px;
     }
 
-    .vh-slider-list .vh-projects-item-thumb>button {
+    .vh-slider-list .vh-projects-item-thumb>a {
         margin-right: 75px;
     }
 
@@ -904,7 +958,7 @@ button {
         width: 800px;
     }
 
-    .vh-projects-list .vh-projects-item-thumb{
+    .vh-projects-list .vh-projects-item-thumb {
         padding: 75px 0 19px 0;
     }
 
@@ -1065,6 +1119,7 @@ button {
     transition: all .2s ease-out;
     text-transform: lowercase;
     position: relative;
+    text-decoration: none;
 }
 
 .vh-btn-sm {

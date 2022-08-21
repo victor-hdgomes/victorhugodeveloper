@@ -80,6 +80,20 @@ btnContact.addEventListener("click", function () {
     this.classList.toggle("vh-change-icon");
 })
 
+// TOPBAR ELEMENTS
+let triggerTopbar = document.querySelector('.vh-trigger-topbar')
+let topbar = document.querySelector('.vh-topbar')
+let logo = document.querySelector('.vh-logo')
+let trigger = new Waypoint({
+    element: triggerTopbar,
+    handler: function () {
+        topbar.classList.toggle('vh-topbar-bg')
+        logo.classList.toggle('vh-logo-shorten')
+        logo.classList.toggle('vh-logo-big')
+    },
+    offset: '50px'
+})
+
 // WAYPOINTS
 let myScrollDown = document.querySelector('.vh-scroll-down')
 let waypoint = new Waypoint({
