@@ -9,7 +9,7 @@ window.addEventListener('load', function () {
 
 // GREET
 let greet = document.querySelector('#vh-greet');
-let text = "i!";
+let text = "lá!";
 let interval = 300;
 
 window.addEventListener('load', function () {
