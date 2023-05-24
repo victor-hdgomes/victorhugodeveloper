@@ -7,6 +7,10 @@ window.addEventListener('load', function () {
     }, 2000);
 })
 
+a[disabled="disabled"] {
+    pointer-events: none;
+}
+
 // GREET
 let greet = document.querySelector('#vh-greet');
 let text = "i!";
